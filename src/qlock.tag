@@ -3,45 +3,193 @@ import qlock from './qlock_reducer.js';
 
 <qlock>
 
-<pre>
-<span class="on">IT</span>L<span class="on">IS</span>BFAMPM
-<span class={ on: time.quarter }>A</span>C<span class={ on: time.quarter }>QUARTER</span>DC
-<span class={ on: time.twentyMinutes }>TWENTY</span><span class={ on: time.fiveMinutes }>FIVE</span>X
-<span class={ on: time.half }>HALF</span>B<span class={ on: time.tenMinutes }>TEN</span>F<span class={ on: time.to }>TO</span>
-<span class={ on: time.past }>PAST</span>ERU<span class={ on: time.h == 9 }>NINE</span>
-<span class={ on: time.h == 1 }>ONE</span><span class={ on: time.h == 6 }>SIX</span><span class={ on: time.h == 3 }>THREE</span>
-<span class={ on: time.h == 4 }>FOUR</span><span class={ on: time.h == 5 }>FIVE</span><span class={ on: time.h == 2 }>TWO</span>
-<span class={ on: time.h == 8 }>EIGHT</span><span class={ on: time.h == 11 }>ELEVEN</span>
-<span class={ on: time.h == 7 }>SEVEN</span><span class={ on: time.h == 0 }>TWELVE</span>
-<span class={ on: time.h == 10 }>TEN</span>SE<span class={ on: time.oclock }>OCLOCK</span>
-<span>{time.oneMinute ? '&bull;' : ' '}</span>  <span>{time.twoMinutes ? '&bull;' : ' '}</span>   <span>{time.threeMinutes ? '&bull;' : ' '}</span>  <span>{time.fourMinutes ? '&bull;' : ' '}</span>
-</pre>
+  <div class="grid-container { 'dark': isDarkModeOn }">
+      <div class="on">I</div>
+	  <div class="on">T</div>
+	  <div>L</div>
+	  <div class="on">I</div>
+	  <div class="on">S</div>
+	  <div>B</div>
+	  <div>F</div>
+	  <div>A</div>
+	  <div>M</div>
+	  <div>P</div>
+	  <div>M</div>
+
+      <div class={ on: time.quarter }>A</div>
+	  <div>C</div>
+	  <div class={ on: time.quarter }>Q</div>
+	  <div class={ on: time.quarter }>U</div>
+	  <div class={ on: time.quarter }>A</div>
+	  <div class={ on: time.quarter }>R</div>
+	  <div class={ on: time.quarter }>T</div>
+	  <div class={ on: time.quarter }>E</div>
+	  <div class={ on: time.quarter }>R</div>
+	  <div>D</div>
+	  <div>C</div>
+
+      <div class={ on: time.twentyMinutes }>T</div>
+	  <div class={ on: time.twentyMinutes }>W</div>
+	  <div class={ on: time.twentyMinutes }>E</div>
+	  <div class={ on: time.twentyMinutes }>N</div>
+	  <div class={ on: time.twentyMinutes }>T</div>
+	  <div class={ on: time.twentyMinutes }>Y</div>
+	  <div class={ on: time.fiveMinutes }>F</div>
+	  <div class={ on: time.fiveMinutes }>I</div>
+	  <div class={ on: time.fiveMinutes }>V</div>
+	  <div class={ on: time.fiveMinutes }>E</div>
+	  <div>X</div>
+
+      <div class={ on: time.half }>H</div>
+	  <div class={ on: time.half }>A</div>
+	  <div class={ on: time.half }>L</div>
+	  <div class={ on: time.half }>F</div>
+	  <div>B</div>
+	  <div class={ on: time.tenMinutes }>T</div>
+	  <div class={ on: time.tenMinutes }>E</div>
+	  <div class={ on: time.tenMinutes }>N</div>
+	  <div>F</div>
+	  <div class={ on: time.to }>T</div>
+	  <div class={ on: time.to }>O</div>
+
+      <div class={ on: time.past }>P</div>
+	  <div class={ on: time.past }>A</div>
+	  <div class={ on: time.past }>S</div>
+	  <div class={ on: time.past }>T</div>
+	  <div>E</div>
+	  <div>R</div>
+	  <div>U</div>
+	  <div class={ on: time.h == 9 }>N</div>
+	  <div class={ on: time.h == 9 }>I</div>
+	  <div class={ on: time.h == 9 }>N</div>
+	  <div class={ on: time.h == 9 }>E</div>
+
+      <div class={ on: time.h == 1 }>O</div>
+	  <div class={ on: time.h == 1 }>N</div>
+	  <div class={ on: time.h == 1 }>E</div>
+	  <div class={ on: time.h == 6 }>S</div>
+	  <div class={ on: time.h == 6 }>I</div>
+	  <div class={ on: time.h == 6 }>X</div>
+	  <div class={ on: time.h == 3 }>T</div>
+	  <div class={ on: time.h == 3 }>H</div>
+	  <div class={ on: time.h == 3 }>R</div>
+	  <div class={ on: time.h == 3 }>E</div>
+	  <div class={ on: time.h == 3 }>E</div>
+
+      <div class={ on: time.h == 4 }>F</div>
+	  <div class={ on: time.h == 4 }>O</div>
+	  <div class={ on: time.h == 4 }>U</div>
+	  <div class={ on: time.h == 4 }>R</div>
+	  <div class={ on: time.h == 5 }>F</div>
+	  <div class={ on: time.h == 5 }>I</div>
+	  <div class={ on: time.h == 5 }>V</div>
+	  <div class={ on: time.h == 5 }>E</div>
+	  <div class={ on: time.h == 2 }>T</div>
+	  <div class={ on: time.h == 2 }>W</div>
+	  <div class={ on: time.h == 2 }>O</div>
+
+      <div class={ on: time.h == 8 }>E</div>
+	  <div class={ on: time.h == 8 }>I</div>
+	  <div class={ on: time.h == 8 }>G</div>
+	  <div class={ on: time.h == 8 }>H</div>
+	  <div class={ on: time.h == 8 }>T</div>
+	  <div class={ on: time.h == 11 }>E</div>
+	  <div class={ on: time.h == 11 }>L</div>
+	  <div class={ on: time.h == 11 }>E</div>
+	  <div class={ on: time.h == 11 }>V</div>
+	  <div class={ on: time.h == 11 }>E</div>
+	  <div class={ on: time.h == 11 }>N</div>
+
+      <div class={ on: time.h == 7 }>S</div>
+	  <div class={ on: time.h == 7 }>E</div>
+	  <div class={ on: time.h == 7 }>V</div>
+	  <div class={ on: time.h == 7 }>E</div>
+	  <div class={ on: time.h == 7 }>N</div>
+	  <div class={ on: time.h == 0 }>T</div>
+	  <div class={ on: time.h == 0 }>W</div>
+	  <div class={ on: time.h == 0 }>E</div>
+	  <div class={ on: time.h == 0 }>L</div>
+	  <div class={ on: time.h == 0 }>V</div>
+	  <div class={ on: time.h == 0 }>E</div>
+
+      <div class={ on: time.h == 10 }>T</div>
+	  <div class={ on: time.h == 10 }>E</div>
+	  <div class={ on: time.h == 10 }>N</div>
+	  <div>S</div>
+	  <div>E</div>
+	  <div class={ on: time.oclock }>O</div>
+	  <div class={ on: time.oclock }>C</div>
+	  <div class={ on: time.oclock }>L</div>
+	  <div class={ on: time.oclock }>O</div>
+	  <div class={ on: time.oclock }>C</div>
+	  <div class={ on: time.oclock }>K</div>
+  </div>
 
 <style>
-  pre {
-    display: inline-block;
-    letter-spacing: 0.46em;
-  }
-  pre span {
-    transition: font-weight 1s ease;
-  }
-  pre .on {
-    font-weight: bold;
-  }
+	.grid-container {
+		display: grid;
+		justify-items: center;
+		align-items: center;
+		font-size: 3vw;
+
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		height: 100%;
+	}
+
+	.grid-container.dark {
+		background-color: black;
+	}
+
+	.grid-container.dark div {
+		color: #333;
+	}
+
+	.grid-container.dark div.on {
+		color: white;
+	}
+
+	div {
+		color: lightgray; 
+	}
+
+	div.on {
+		font-weight: bold;
+		color: #333;
+	}
 </style>
 
 <script>
-  const store = createStore(qlock);
+	let tag = this
+	tag.isDarkModeOn = false
 
-  const render = () => {
-    this.time = store.getState();
-    this.update();
-  }
-  store.subscribe(render);
+	const store = createStore(qlock)
 
-  setInterval(() => {
-    store.dispatch({ type: 'TICK', now: new Date() });
-  }, 3000);
+	let init = () => {
+		setInterval(() => {
+			store.dispatch({ type: 'TICK', now: new Date() })
+		}, 3000)
+
+		store.subscribe(render)
+
+		tag.isDarkModeOn = getUrlVars()["mode"] && getUrlVars()["mode"].indexOf("dark") > -1 ? true : false
+	}
+
+	const render = () => {
+		this.time = store.getState()
+		this.update()
+	}
+
+	const getUrlVars = () => {
+    	let vars = {}
+    	let parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, (m,key,value) => {
+        	vars[key] = value
+    	});
+
+    	return vars
+	}
+
+	init()
 </script>
 
 </qlock>
